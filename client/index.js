@@ -8,9 +8,20 @@
  */
 
 import {
-  registerBpmnJSPlugin
+  registerBpmnJSPlugin,
+  registerBpmnJSModdleExtension,
+  registerClientExtension
 } from 'camunda-modeler-plugin-helpers';
+
+import QualityAssurance from '../resources/qa.json';
+
+// Register a moddle extension for bpmn-js
+registerBpmnJSModdleExtension(QualityAssurance);
 
 import BpmnExtensionModule from './bpmn-js-extension';
 
 registerBpmnJSPlugin(BpmnExtensionModule);
+
+import TEST from './test'
+registerBpmnJSPlugin(TEST);
+

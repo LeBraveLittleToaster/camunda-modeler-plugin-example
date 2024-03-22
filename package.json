@@ -29,5 +29,10 @@
   "files": [
     "dist",
     "index.js"
-  ]
+  ],
+  "dependencies": {
+    "bpmn-js": "^17.1.0",
+    "min-dash": "^4.2.1",
+    "tiny-svg": "^4.0.0"
+  }
 }
