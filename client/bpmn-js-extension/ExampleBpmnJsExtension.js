@@ -6,12 +6,15 @@
  *
  * https://github.com/bpmn-io/bpmn-js-examples
  */
-export default function ExampleBpmnJsExtension(eventBus,canvas, elementRegistry, modeling) {
+export default function ExampleBpmnJsExtension(eventBus,bpmnjs, canvas, elementRegistry, modeling) {
 
+  /*
   console.log(eventBus)
+  console.log(bpmnjs)
   console.log(canvas)
   console.log(elementRegistry)
   console.log(modeling)
+  */
 
   eventBus.on('shape.added', function(context) {
     var element = context.element;
@@ -29,6 +32,7 @@ export default function ExampleBpmnJsExtension(eventBus,canvas, elementRegistry,
 
 ExampleBpmnJsExtension.$inject = [
   'eventBus',
+  'bpmnjs',
   'canvas',
   'elementRegistry',
   'modeling'
