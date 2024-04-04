@@ -1,3 +1,7 @@
+# HINTS:
+Find syslnk => "camunda-modeler-plugin-example % find . -maxdepth 1 -type l -ls"
+Make Link => "./plugins -> /Users/MY_NAME/Library/Application Support/camunda-modeler/plugins"
+
 # Camunda Modeler Plugin Example
 
 ![Compatible with Camunda Modeler version 5](https://img.shields.io/badge/Modeler_Version-5.0.0+-blue.svg) ![Plugin Type](https://img.shields.io/badge/Plugin%20Type-BPMN-orange.svg) 
